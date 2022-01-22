@@ -11,6 +11,15 @@ header{
     background-size: cover;
     position: relative;
 }
+.music-header {
+    background-image: linear-gradient(#00000080, #00000080), url(images/banner5.jpg);
+}
+.bio-header {
+    background-image: linear-gradient(#00000080, #00000080), url(images/banner2.jpg);
+}
+.cta-header {
+    background-image: linear-gradient(#00000080, #00000080), url(images/banner6.jpg);
+}
 nav {
     display: flex;
     padding: 2% 6%;
@@ -44,9 +53,11 @@ nav a span {
     border: 1px solid #00000000;
 }
 .nav-links ul li a:hover{
-    border: 1px solid #fff;
-    transition: 1s;
+    color: #9b9b9b;
+    opacity: 0.8;
+    transition: 0.5s;
 }
+
 .text-box{
     width: 90%;
     color: #fff;
@@ -95,7 +106,7 @@ nav .fas{
         display: block;
     }
     .nav-links{
-        position: absolute;
+        position: fixed;
         background: #252525;
         height: 100%;
         width: 200px;
@@ -245,4 +256,130 @@ footer p{
     color: #252525;
     margin: 0 13px;
     cursor: pointer;
+}
+
+/*------------Music------------*/
+.albums{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.albums h2{
+    font-size: 36px;
+    font-weight: 600;
+}
+.albums p{
+    color: #535353;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.albums-row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.albums-row-last{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+@media (max-width: 700px) {
+    .albums-row {
+        flex-direction: column;
+    }
+}
+.albums-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+.albums-col img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+.albums-col img:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+.albums-col p{
+    padding: 0;
+}
+.albums-col h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+/*----------Bio---------------*/
+.bio {
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+    padding-top: 100px;
+}
+.bio h2{
+    font-weight: 600;
+    padding: 10px;
+}
+.bio p{
+    color: #696969;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: 300;
+    line-height: 35px;
+}
+@media (max-width: 700px) {
+    .bio h2{
+        font-size: 20px;
+    }
+    .bio p{
+        font-size: 13px;
+        line-height: 30px;
+    }
+}
+
+/*--------contact-------*/
+.contact {
+    width: 80%;
+    margin: auto;
+}
+.contact-col {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div p{
+    padding: 0;
+    line-height: 30px;
+}
+.contact-col div h2{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #252525;
+}
+.contact-col input, .contact-col textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #252525;
+    box-sizing: border-box;
+    color: #252525;
+}
+.grey-btn {
+    border: 1px solid #252525;
+    color: #252525;
+}
+.grey-btn:hover {
+    border: 1px solid #252525;
+    color: #fff;
 }
