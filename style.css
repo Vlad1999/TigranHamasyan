@@ -281,11 +281,6 @@ footer p{
     display: flex;
     justify-content: space-between;
 }
-.albums-row-last{
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-evenly;
-}
 @media (max-width: 700px) {
     .albums-row {
         flex-direction: column;
@@ -297,6 +292,7 @@ footer p{
     text-align: left;
     position: relative;
     overflow: hidden;
+    margin-bottom: 15px;
 }
 .albums-col img{
     width: 100%;
